@@ -9,3 +9,7 @@ deployment:
 test:
   override:    
     - mocha
+
+notify:
+    webhooks:
+        - url: https://api.opsgenie.com/v1/json/circleci?apiKey=3e30f400-93fb-41ef-9f94-add4da516106
